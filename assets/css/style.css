@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
 :root {
     --white: hsl(0, 0%, 100%);
     --stone-100: hsl(30, 54%, 90%);
@@ -12,8 +15,8 @@
 
     --description: 1rem;
     --sub-titles: 1.75rem;
-    --title-family: 'YoungSerif', serif;
-    --description-family: 'Outfit', sans-serif;
+    --title-family: "Young Serif", serif;
+    --description-family: "Outfit", sans-serif;
 
     --title-weight: 400;
     --description-regular: 400;
@@ -38,19 +41,123 @@
     background-color: var(--stone-100);
 }
 
-.recipe-page{
+.recipe-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 46rem;
+    width: 100%;
     padding: 2.5rem;
-    gap: 2.5rem;
+    gap: 2.125rem;
     border-radius: 1.5rem;
     background-color: var(--white);
 }
-.recipe-image{
+
+.recipe-image {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 0.75rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.recipe-title {
+    font-family: var(--title-family);
+    font-weight: var(--title-weight);
+    color: var(--stone-900);
+}
+
+.recipe-description {
+    font-family: var(--description-family);
+    font-weight: var(--description-regular);
+    color: var(--stone-600);
+    font-size: var(--description);
+}
+
+.preparation-time {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background-color: var(--rose-50);
+}
+
+.preparation-time-title {
+    font-family: var(--description-family);
+    font-weight: var(--description-semibold);
+    color: var(--rose-800);
+}
+
+.cooking-time-list li::marker {
+    color: var(--rose-800);
+}
+
+.cooking-time-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1rem;
+}
+
+.cooking-time {
+    font-family: var(--description-family);
+}
+
+.emphasis {
+    font-weight: var(--description-bold);
+}
+
+.cooking-time,
+.emphasis {
+    color: var(--stone-600);
+}
+
+.ingredients, .instructions{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.guide-title{
+    font-family: var(--title-family);
+    color: var(--brown-800);
+    font-weight: var(--title-weight);
+}
+.ingredients-list, .introduction-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    font-family: var(--description-family);
+    color: var(--stone-600);
+
+}
+
+.ingredients-list li::marker {
+    color: var(--brown-800);
+}
+
+.separation {
+    width: 100%;
+    height: 0.0625rem;
+    background-color: var(--stone-150);
+}
+.introduction-list li::marker{
+    font-family: var(--description-family);
+    color: var(--brown-800);
+    font-weight: var(--description-semibold);
+}
+
+.guide{
+    font-family: var(--description-family);
+    color: var(--stone-600);
 }
